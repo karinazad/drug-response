@@ -28,9 +28,7 @@ CCLE.sensitivity.signatures <- drugSensitivitySig(CCLE, mDataType="rna", sensiti
 
 ## Data Processing
 
-The above described studies provide statistics of the dose-response curves to compound sensitivity values. Here, a summarized sensitivty value Act Area – the area above the fitted dose response curve (1/AUC) is used here along with IC50 – the concentration at which the compound reaches 50% reduction in cell viability, and EC50 – the concentration at which the compound reaches 50% of its maximum reduction in cell viability.
-
-Mutation data was summarized to binary gene-level variables represented as 0 (wild type) and 1 (mutation). Tumor types were one-hot encoded. 
+The above described studies provide statistics of the dose-response curves to compound sensitivity values. Here, a summarized sensitivty value Act Area – the area above the fitted dose response curve (1/AUC) is used here along with IC50 – the concentration at which the compound reaches 50% reduction in cell viability, and EC50 – the concentration at which the compound reaches 50% of its maximum reduction in cell viability. Mutation data was summarized to binary gene-level variables represented as 0 (wild type) and 1 (mutation). Tumor types were one-hot encoded. 
 
 
 
