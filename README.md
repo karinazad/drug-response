@@ -3,7 +3,6 @@
 Predicting cytotoxity of cancer drugs.
 
 ## Table of Content
-- [Drug Response](#drug-response)
   * [Datasets](#datasets)
   * [Data Processing](#data-processing)
   * [Approach](#approach)
