@@ -4,14 +4,12 @@ Predicting cytotoxity of cancer drugs.
 
 ## Datasets
 
-* Genomics of Drug Sensitivity in Cancer (GDSC) database provide gene expression, copy number variation and coding variants for s thousand of cancer cell lines. In this work, gene expression data are used. 
+* Genomics of Drug Sensitivity in Cancer (GDSC) database provide gene expression, copy number variation and coding variants of cancer cell lines treated with anti-cancer compounds. It composed of 41,814 genomic features and 24 compounds profiled on 504 cell lines. 
 
 * Broad-Novartis Cancer Cell Line Encyclopedia (CCLE) provides expression data for over 500 cancer cell lines which were treated with 24 different cancer drugs. The datasets were obtained using PharmacoGx's R script: https://pharmacodb.ca/pharmacogx?pgx=1
 
 * CMAP L1000 is contains gene expression data of cancer cell lines before and after treatment. Such drug-induced petrubation data are available combinations of 978 genes and thousands of cancer drugs or other small molecules. Previously, this dataset is also known as Library of Integrated Network based Cellular Signatures (LINCS). Version Phase II is used here. Available at:
-
-### Accessing the datasets
-The CCLE dataset was accessed using the followin R script:
+The CCLE dataset was accessed using the following R script:
 
 ```
 source("http://www.bioconductor.org/biocLite.R") 
@@ -31,9 +29,16 @@ CCLE.expression <- summarizeMolecularProfiles(CCLE, mDataType="rna")
 CCLE.sensitivity.signatures <- drugSensitivitySig(CCLE, mDataType="rna", sensitivity.measure="auc_recomputed")
 ```
 
+## Data Processing
+
+The above described studies provide statistics of the dose-response curves to compound sensitivity values. Here, a summarized sensitivty value Act Area – the area above the fitted dose response curve (1/AUC) is used here along with IC50 – the concentration at which the compound reaches 50% reduction in cell viability, and EC50 – the concentration at which the compound reaches 50% of its maximum reduction in cell viability.
+
+Mutation data was summarized to binary gene-level variables represented as 0 (wild type) and 1 (mutation). Tumor types were one-hot encoded. 
+
 
 
 ## Approach
 
-Given high-dimensionality of both datasets which contain over 17,000 genes (features), an autoencoder was used to obtain the lower-dimensional latent space for gene expression patterns. 
+Given high-dimensionality of the datasets which contain expression profile for over 18,000 genes, an autoencoder was used to obtain the lower-dimensional latent space for gene expression patterns. 
+
 
