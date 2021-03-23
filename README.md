@@ -36,4 +36,6 @@ The above described studies provide statistics of the dose-response curves to co
 
 Given high-dimensionality of the datasets which contain expression profile for over 18,000 genes, an autoencoder was used to obtain the lower-dimensional latent space for gene expression patterns. 
 
+<img src="https://miro.medium.com/max/926/1*1sfunl2TIRyaoKcQIEviPA.png">
+
 
