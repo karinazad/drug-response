@@ -2,14 +2,6 @@
 
 Predicting cytotoxity of cancer drugs.
 
-## Table of Content
-  * [Datasets](#datasets)
-  * [Data Processing](#data-processing)
-  * [Approach](#approach)
-  * [Usage](#usage)
-    + [Installation](#installation)
-    + [Run examples](#run-examples)
-
 ## Datasets
 
 * Broad-Novartis Cancer Cell Line Encyclopedia (CCLE) provides expression data for cancer cell lines which were treated with different cancer drugs. It is composed of 41,814 genomic features and 24 compounds profiled on 504 cell lines. The datasets were obtained using PharmacoGx https://pharmacodb.ca/pharmacogx?pgx=1. For the drug response target a binarized version of dose-response curves is used.
