@@ -41,6 +41,14 @@ Given high-dimensionality of the datasets which contain expression profile for o
 
 ## Usage
 
+### Installation
+To install the repo and get the requirements:
+```
+git clone https://github.com/karinazad/drug-response.git
+cd drug-response
+pip install -r requirements.txt
+```
+
 To run an example of drug-response prediction:
 
 ```
