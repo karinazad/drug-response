@@ -39,4 +39,15 @@ Given high-dimensionality of the datasets which contain expression profile for o
 
 <img src="https://miro.medium.com/max/926/1*1sfunl2TIRyaoKcQIEviPA.png">
 
+## Usage
+
+To run an example of drug-response prediction:
+
+```
+python src/drug-response/run.py
+```
+                                                                               
+
+
+
 
