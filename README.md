@@ -16,10 +16,7 @@ library(PharmacoGx)
 # Download the object for CCLE 
 CCLE <- downloadPSet(CCLE) 
 
-# Plot Drug Dose response curves, using the same names for compounds and cell lines as PharmacoDB 
-drugDoseResponseCurve(CCLE, drug="paclitaxel", cell="MCF7") 
-
-# Extract the expression data to a matrix 
+# Extract the expression data
 CCLE.expression <- summarizeMolecularProfiles(CCLE, mDataType="rna") 
 
 # Run a linear model for univariate biomarker discovery 
