@@ -4,11 +4,8 @@ Predicting cytotoxity of cancer drugs.
 
 ## Datasets
 
-* Broad-Novartis Cancer Cell Line Encyclopedia (CCLE) provides expression data for cancer cell lines which were treated with different cancer drugs. It is composed of 41,814 genomic features and 24 compounds profiled on 504 cell lines. The datasets were obtained using PharmacoGx's R script: https://pharmacodb.ca/pharmacogx?pgx=1
+* Broad-Novartis Cancer Cell Line Encyclopedia (CCLE) provides expression data for cancer cell lines which were treated with different cancer drugs. It is composed of 41,814 genomic features and 24 compounds profiled on 504 cell lines. The datasets were obtained using PharmacoGx https://pharmacodb.ca/pharmacogx?pgx=1.
 
-* Genomics of Drug Sensitivity in Cancer (GDSC) database provide gene expression, copy number variation and coding variants of a thousand cancer cell lines treated with anti-cancer compounds. 
-
-* CMAP L1000 is contains gene expression data of cancer cell lines before and after treatment. Such drug-induced petrubation data are available combinations of 978 genes and thousands of cancer drugs or other small molecules. Previously, this dataset is also known as Library of Integrated Network based Cellular Signatures (LINCS). Version Phase II is used here. Available at:
 The CCLE dataset was accessed using the following R script:
 
 ```
